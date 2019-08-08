@@ -1,0 +1,25 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div *ngIf="closeBtn">
+<img class="closeBtn" (click)="closeMark()" src="https://www.pinclipart.com/picdir/big/88-882904_mermaiden-crystal-dress-up-game-white-x-icon.png">
+</div>
+<div *ngIf="!display" id="imageCenter">
+    <img alt="marketing" src="{{image}}">
+  </div>
+  <app-bar *ngIf="time_one"></app-bar>
+
+<div *ngIf="display">
+<h2>Here are some links to help you start: </h2>
+<ul>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
+</div>

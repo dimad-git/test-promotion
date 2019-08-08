@@ -1,0 +1,34 @@
+
+
+ #imageCenter{
+ 	background-size: 100%;
+    background-repeat-y: no-repeat;
+    text-align:center;
+
+    img{
+    	visibility: hidden;
+    	width: 100%;
+    	height: 100vh;
+    }
+ }
+.closeBtn{
+	position: absolute;
+    right: 60px;
+    top: 40px;
+    width: 50px;
+}
+
+
+@media screen and (orientation:portrait) {
+  #imageCenter {
+    background-image: url("https://static.aviapark.com/files/155333/nc_ss19_620x960px_1.png");
+    background-color: #f4584f;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  #imageCenter {
+    background-image: url("https://static.aviapark.com/files/155333/960x576_1.png");
+  }
+}
+
